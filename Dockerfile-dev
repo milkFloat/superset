@@ -33,7 +33,9 @@ RUN cd /app \
 #ODBC Driver Setup (Using Alien)
 
 RUN apt-get update
-RUN apt-get install alien
+RUN apt-get install -y alien
+
+#RUN yum update && yum install alien
 
 RUN cd ~
 RUN mkdir odbcdl
